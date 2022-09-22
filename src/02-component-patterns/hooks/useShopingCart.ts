@@ -20,6 +20,7 @@ const useShopingCart = () => {
         product: Product;
       }) => {
         setShoppingCart((oldShoppingCart) => {
+           /*
           const productInCart: ProductInCart = oldShoppingCart[product.id] || {
             ...product,
             count: 0,
@@ -38,7 +39,7 @@ const useShopingCart = () => {
           return {
             ...oldShoppingCart,
           };
-          /*
+         */
           if (count === 0) {
             delete oldShoppingCart[product.id];
             // const { [product.id]: todelete, ...rest } = oldShoppingCart; otra alternativa
@@ -49,7 +50,7 @@ const useShopingCart = () => {
           return {
             ...oldShoppingCart,
             [product.id]: { ...product, count },
-          };*/
+          };
         });
       };
     return {
