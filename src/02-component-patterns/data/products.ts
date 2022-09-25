@@ -15,4 +15,4 @@ const product = {
   };
 
 
-  export const Products: Product[] = [product, product2];
+  export const products: Product[] = [product, product2];
